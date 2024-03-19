@@ -16,6 +16,17 @@ using Core.Mailing;
 using Core.Mailing.MailKitImplementations;
 using Core.Security;
 using Core.Security.JWT;
+using Application.Services.Appointments;
+using Application.Services.AppointmentTimes;
+using Application.Services.Cities;
+using Application.Services.Diseases;
+using Application.Services.Districts;
+using Application.Services.Hospitals;
+using Application.Services.MedicineCompanies;
+using Application.Services.Medicines;
+using Application.Services.Polyclinics;
+using Application.Services.PrescriptionDetails;
+using Application.Services.Prescriptions;
 
 namespace Application;
 
@@ -52,6 +63,18 @@ public static class ApplicationServiceRegistration
         services.AddScoped<IAuthService, AuthManager>();
         services.AddScoped<IAuthenticatorService, AuthenticatorManager>();
         services.AddScoped<IUserService, UserManager>();
+        services.AddScoped<IAppointmentsService, AppointmentsManager>();
+        services.AddScoped<IAppointmentTimesService, AppointmentTimesManager>();
+        services.AddScoped<ICitiesService, CitiesManager>();
+        services.AddScoped<IDiseasesService, DiseasesManager>();
+        services.AddScoped<IDistrictsService, DistrictsManager>();
+        services.AddScoped<IHospitalsService, HospitalsManager>();
+        services.AddScoped<IMedicineCompaniesService, MedicineCompaniesManager>();
+        services.AddScoped<IMedicinesService,MedicinesManager>();
+        services.AddScoped<IPolyclinicsService, PolyclinicsManager>();
+        services.AddScoped<IPrescriptionDetailsService, PrescriptionDetailsManager>();
+        services.AddScoped<IPrescriptionsService, PrescriptionsManager>();
+      
 
        // services.AddYamlResourceLocalization();
 

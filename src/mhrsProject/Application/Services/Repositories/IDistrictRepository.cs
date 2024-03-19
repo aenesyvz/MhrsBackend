@@ -5,4 +5,5 @@ namespace Application.Services.Repositories;
 
 public interface IDistrictRepository : IAsyncRepository<District, Guid>, IRepository<District, Guid>
 {
+    Task<List<District>> GetListDistrictByCityIdAsync(Guid cityId);
 }

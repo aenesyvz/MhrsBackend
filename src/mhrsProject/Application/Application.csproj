@@ -43,4 +43,15 @@
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Appointments\Resources\Locales\" />
+    <Folder Include="Features\AppointmentTimes\Resources\Locales\" />
+    <Folder Include="Features\Cities\Resources\Locales\" />
+    <Folder Include="Features\Diseases\Resources\Locales\" />
+    <Folder Include="Features\Districts\Resources\Locales\" />
+    <Folder Include="Features\Hospitals\Resources\Locales\" />
+    <Folder Include="Features\MedicineCompanies\Resources\Locales\" />
+    <Folder Include="Features\Medicines\Resources\Locales\" />
+    <Folder Include="Features\Prescriptions\Resources\Locales\" />
+  </ItemGroup>
 </Project>
